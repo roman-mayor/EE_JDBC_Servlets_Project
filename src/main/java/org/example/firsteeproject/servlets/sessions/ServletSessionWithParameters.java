@@ -26,7 +26,6 @@ public class ServletSessionWithParameters extends HttpServlet {
         String name = req.getParameter("name");
         int age = Integer.parseInt(req.getParameter("age"));
 
-        //создаем объект класса User с полученными данными из параметров выше
         if (user == null) user = new User(name, age);
 
         //заносим наш готовый объект класса User в сессию
